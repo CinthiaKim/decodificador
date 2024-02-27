@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); /*fonte*/
+
+:root {
+    --cor-um: #0A3871;
+    --cor-dois: #F3F5FC;
+    --cor-tres: #FFFFFF;
+    --cor-quatro: #D8DFE8;
+}
+
+* {
+    margin: 0; /*reset CSS da margin*/
+    padding: 0; /*reset CSS do padding*/
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box; /*para que o tamanho do elemento filho não saia fora do tamanho do "pai"*/
+    background-color: var(--cor-dois); /*cor de fundo*/
+    color: var(--cor-um); /*cor dos textos*/
+}
+
+.cabecalho{
+    background-color: var(--cor-tres);
+    padding: 2%; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.cabecalho_texto{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.tela-principal{ /*main*/
+    /*margin: 2% 2%; (espaçamento da margem em relação aos elementos)*/
+    display: flex; /*flexbox: posicionamento*/ 
+    align-items: flex-start; /*itens de alinhamento*/
+    justify-content: center; /*espaçamento entre as section*/
+}
+
+.section_input{
+    margin: 5% 5%; /*espaçamento da margem*/
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+
+.input_texto {
+    color: var(--cor-um);
+    background: transparent;
+    border: 1px solid var(--cor-um);
+    font-family: "Inter", sans-serif; /*estilo de fonte importada através da URL*/
+    font-size: 2rem; /*tamanho da fonte*/
+    font-weight: 400;
+    position: absolute;  
+    border-radius: 8px;
+    width: 40%;
+}
+
+.atencao_observacao{
+    display: flex; 
+    justify-content: flex-start;
+    margin-top: 851px;
+    margin-bottom: 16px;
+    gap: 8px;
+}
+
+.observacao{
+    font-size: 0.75rem;
+    font-family: "Inter", sans-serif;
+}
+
+.botao{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.botao-criptografar{
+    background-color: var(--cor-um);
+    color: var(--cor-tres);
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    width: 328px;
+    text-align: center; /*alinhamento do texto*/
+    border-radius: 24px; /*raio de arredondamento da borda*/
+    padding: 24px 0; /*espaçamento entre o conteúdo e a borda. Primeiro valor é vertical e o segundo é o horizontal*/
+}
+
+.botao-descriptografar{
+    background-color: var(--cor-quatro);
+    color: var(--cor-um);
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    width: 328px;
+    text-align: center;
+    border: 1px solid var(--cor-um);
+    border-radius: 24px;
+    padding: 24px 0;
+}
+
+.section_output{
+    margin: 2% 10%; /*espaçamento da margem em relação aos elementos*/
+    display: flex; /*flexbox: posicionamento*/ 
+    flex-direction: column;
+    align-items: center; /*itens de alinhamento*/
+    /*justify-content: flex-start;*/ /*espaçamento entre as section*/
+    background-color: var(--cor-tres);
+    border-radius: 32px;
+    text-align: center;
+    padding: 40px;
+    height: 944px;
+    width: 50%;
+}
+
+.section_output_mensagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 845px;
+}
+
+.output_texto {
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    background: transparent;
+    border: 1px solid black;
+    position: absolute;
+    resize: vertical;
+    width: 336px;
+    height: 781px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid var(--cor-tres)
+}
+
+.output_mensagem{
+    color: #343A40;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 700;    
+}
+
+.output_botao{
+    display: flex;
+    justify-content: center;
+    padding-top: 845px;
+    padding-left: 36px;
+}
+
+.menino_lupa{
+    width: 336px;
+    height: 304px;
+    padding-top: 243px;
+    padding-left: 36px;
+}
+
+.botao-copiar{
+    color: var(--cor-um);
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    background-color: var(--cor-tres);
+    width: 336px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--cor-um);
+    border-radius: 24px;
+    padding: 24px 0;
+    margin: 32px;
+}
+
+.botao-copiar:hover { /*efeito HOVER: muda a cor, quando passamos o cursor por cima do botão*/
+    background-color: var(--cor-um);
+    color: var(--cor-tres);
+}
+.rodape{
+    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;
+    color: var(--cor-um);
+    background-color: var(--cor-quatro);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github{
+    text-decoration:none;
+    color: var(--cor-um);
+}
+
+.linkedin{
+    text-decoration:none;
+    color: var(--cor-um);
+}
+
+
+@media (max-width: 1300px) { /*em uma tela menor, os elementos se enquadram para melhor visualização*/
+    .tela-principal{
+        flex-direction: column; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 5%;
+    }
+
+    .section_input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .section_output{
+        display: flex;
+        align-items: center;
+    }
+
+    .botao{
+        flex-direction: column;
+        width: 100%;
+    }
+}
