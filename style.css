@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); /*fonte*/
+
+:root {
+    --cor-um: #0A3871;
+    --cor-dois: #F3F5FC;
+    --cor-tres: #FFFFFF;
+    --cor-quatro: #D8DFE8;
+    --cor-cinco: #7F8487;
+    --cor-seis: #FFE901;
+}
+
+* {
+    margin: 0; /*reset CSS da margin*/
+    padding: 0; /*reset CSS do padding*/
+}
+
+body{
+    box-sizing: border-box; /*para que o tamanho do elemento filho não saia fora do tamanho do "pai"*/
+    background-color: var(--cor-dois); /*cor de fundo*/
+    color: var(--cor-um); /*cor dos textos*/
+    width: 100%;
+    height: 100%;
+    background-image: url('img/binarios.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+}
+
+.cabecalho{
+    background-color: var(--cor-tres);
+    padding: 1%; 
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_texto{
+    font-family: "Inter", sans-serif;
+    font-size: 1.0rem;
+    width: 100%;
+    text-align: center;
+}
+
+.tela-principal{ /*main*/
+    /*margin: 5%; /*(espaçamento da margem em relação aos elementos)*/
+    /*padding: 2%;/*padding: 2% 2%;*/
+    display: flex; /*flexbox: posicionamento*/ 
+    align-items: center; /*itens de alinhamento*/
+    justify-content: center; /*espaçamento entre as section*/
+    width: 100%;
+}
+
+.section_input{
+    /*margin: 0% 5% 0% 10%;*/
+    padding: 6% 6% 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    font-family: "Inter", sans-serif;/*estilo de fonte importada através da URL*/
+}
+
+#input_texto {
+    margin: 0% 10%;
+    color: var(--cor-um);
+    background: var(--cor-tres);
+    border: 1px solid var(--cor-um);
+    font-family: "Inter", sans-serif; /*estilo de fonte importada através da URL*/
+    font-size: 2rem; /*tamanho da fonte*/
+    font-weight: 400;
+    position: relative;  
+    border-radius: 8px;
+    width: 100%;
+    padding: 2%;
+}
+
+.atencao_observacao{
+    display: flex;
+    text-align: left;
+    gap: 8px;
+    margin: 2%;
+    width: 100%;
+    color: var(--cor-seis);
+    font-size: 1.25rem;
+}
+
+.botao{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.botao-criptografar{
+    background-color: var(--cor-tres);
+    color: var(--cor-um);
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    text-align: center; /*alinhamento do texto*/
+    border-radius: 24px; /*raio de arredondamento da borda*/
+    padding: 24px 0; /*espaçamento entre o conteúdo e a borda. Primeiro valor é vertical e o segundo é o horizontal*/
+}
+
+.botao-criptografar:hover { /*efeito HOVER: muda a cor, quando passamos o cursor por cima do botão*/
+    background-color: var(--cor-cinco);
+    color: var(--cor-tres);
+}
+
+.botao-descriptografar{
+    background-color: var(--cor-tres);
+    color: var(--cor-um);
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--cor-um);
+    border-radius: 24px;
+    padding: 24px 0;
+}
+
+.botao-descriptografar:hover { /*efeito HOVER: muda a cor, quando passamos o cursor por cima do botão*/
+    background-color: var(--cor-cinco);
+    color: var(--cor-tres);
+}
+
+.section_output{
+    margin: 1%; /*espaçamento da margem em relação aos elementos*/
+    padding: 2%;
+    display: flex; /*flexbox: posicionamento*/ 
+    flex-direction: column;
+    align-items: center; /*itens de alinhamento*/
+    justify-content: center;/*justify-content: flex-start;*/ /*espaçamento entre as section*/
+    background-color: var(--cor-tres);
+    border-radius: 32px;
+    text-align: center;
+    width: 30%;
+    margin-top: 5%;
+}
+
+.output_texto {
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    border: 1px solid var(--cor-tres);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.output_botao{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 10%;
+    margin-bottom: 1%;
+}
+
+.botao-copiar{
+    color: var(--cor-tres);
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    background-color: var(--cor-um);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--cor-um);
+    border-radius: 24px;
+    padding: 24px 0;
+}
+
+.botao-copiar:hover { /*efeito HOVER: muda a cor, quando passamos o cursor por cima do botão*/
+    background-color: var(--cor-cinco);
+    color: var(--cor-tres);
+}
+
+.rodape{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    color: var(--cor-um);
+    background-color: var(--cor-quatro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    padding: 1% 0%;
+    position: relative;
+    margin-top: 1.7%;
+}
+
+.github{
+    text-decoration:none;
+    color: var(--cor-um);
+}
+
+.linkedin{
+    text-decoration:none;
+    color: var(--cor-um);
+}
+
+
+@media (max-width: 1300px) { /*em uma tela menor, os elementos se enquadram para melhor visualização*/
+
+    .tela-principal{
+        flex-direction: column; 
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 5%;
+    }
+
+    .section_input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_output{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .botao{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .botao-copiar{
+        justify-content: center;
+    }
+
+    .rodape{
+        text-align: center;
+    }
+}

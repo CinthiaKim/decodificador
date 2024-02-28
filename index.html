@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title> <!--titulo que vai aparecer na aba do navegador-->
+    <link rel="stylesheet" href="style.css"> <!--vai linkar o html com o css-->
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_logo">
+            <img src="img/logo.png" alt="logo a da Alura">
+        </div>
+        <div class="cabecalho_texto">
+            <h1>Codificador e Decodificador de Texto</h1>
+        </div>
+    </header>
+        <main class="tela-principal"> <!--titulo, paragrafo, botoes-->
+        <section class="section_input"> 
+            <textarea id="input_texto" placeholder="Digite o texto que deseja criptografar ou descriptografar" cols="10" rows="10"></textarea>                 
+            <div class="atencao_observacao">
+                <img src="img/exclamacao.png" alt="ponto de exclamação"> 
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botao">    
+                <button type="button" onclick="criptografar()" class="botao-criptografar">Criptografar</button>
+                <button type="button" onclick="descriptografar()" class="botao-descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section class="section_output">            
+            <textarea class="output_texto" id="resultado" cols="50" rows="12"></textarea>                        
+            <div class="output_botao">
+                <button type="button" onclick="copiar()" class="botao-copiar">Copiar</button> 
+            </div>
+        </section>
+    </main>
+    <footer class="rodape"> <!--rodape--> 
+        <p>Desenvolvido por Cinthia Kim @2024</p>
+        <div class="links">
+            <a class="github" href="https://github.com/CinthiaKim">Github</a>
+            <a class="linkedin" href="https://linkedin.com/in/cinthia-kim/">Linkedin</a>
+        </div>
+    </footer> 
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
