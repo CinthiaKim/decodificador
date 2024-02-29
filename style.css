@@ -181,7 +181,7 @@ body{
     font-size: 1rem;
     font-family: "Inter", sans-serif;
     color: var(--cor-um);
-    background-color: var(--cor-quatro);
+    background-color: var(--cor-dois);
     display: flex;
     align-items: center;
     justify-content: center;
